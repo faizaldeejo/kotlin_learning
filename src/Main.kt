@@ -1,3 +1,4 @@
+import samplePackage.Bit
 import samplePackage.BasicMaths as MathFun
 
 
@@ -47,14 +48,31 @@ fun main() {
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
     // For Loop
-    val items = listOf("apple", "banana", "kiwifruit")
+
+    val items = listOf("apple", "banana", "kiwifruit", 9)
+
+    for (item in items) print(item)
+
     for (item in items) { // iterate each value one by one
         println(item)
     }
 
+    val ints = arrayOf(2,2,2)
+
+    for (item: Int in ints) {
+        println(item)
+    }
+
+    for (i in 6 downTo -2 step 2) {
+        println(i)
+    }
 
     for (index in items.indices) { // iterate each value's index one by one
         println("item at $index is ${items[index]}")
+    }
+
+    for ((index, value) in items.withIndex()) {
+        println("the element at $index is $value")
     }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -68,7 +86,76 @@ fun main() {
         index++
     }
 
+    do {
+        val y = null
+        println(y)
+    }
+    while (y != null) // y is visible here!
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    // When Expression
+    /*
+    * When is like if black .But when must be accepted one branch. like step 1 example
+    * */
+
+    //Step - 1
+    val x = 1
+    when (x) {
+        1 -> println("x == 1")
+        2 -> println("x == 2")
+        else -> {
+            println("x is neither 1 nor 2")
+        }
+    }
+
+    //Step - 2
+    /* suppose our when is depends on enum class entries and sealed class subtypes,
+    * while we must be use all branches of enum and sealed class. if one branch is missed, we have to use else.
+    * */
+
+    val bitValue1 = when (Bit.ZERO) {
+        Bit.ZERO -> 0
+        Bit.ONE -> 1
+        // 'else' is not required because all cases are covered
+    }
+
+    val bitValue2 = when (Bit.ONE) {
+        Bit.ZERO -> 0
+        else -> 1 // else is required.
+    }
+
+    val value3 = when (x){
+        0, 1 -> println("x == 0 or x == 1")  // can use comma for multiple cases
+        else -> println("otherwise")
+    }
+
+    val s = "1"
+
+    when (x) {
+        s.toInt() -> println("s encodes x")
+        else -> println("s does not encode x")
+    }
+
+    val validNumbers = arrayOf(1,2,3,4,5)
+    when (x) {
+        in 1..10 -> println("x is in the range")   // in - is used to check range
+        in validNumbers -> println("x is valid")
+        !in 10..20 -> println("x is outside the range")
+        else -> println("none of the above")
+    }
+
+    println(hasPrefix(s))
 
 
 }
+
+fun hasPrefix(x: Any) = when(x) {
+    is String -> x.startsWith("prefix")  // startsWith() function used to check the given string starts with the given parameter
+    is Int -> x  // is - is used to check the given values data type
+    else -> false
+}
+
+
+
+
