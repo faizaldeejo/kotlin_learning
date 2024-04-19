@@ -77,7 +77,7 @@ fun main() {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-    // While Loop ( We can't use while loop like for loop in kotlin )
+    // While Loop and do while ( We can't use while loop like for loop in kotlin )
 
     val fruits = listOf("apple", "banana", "kiwifruit")
     var index = 0
@@ -145,8 +145,30 @@ fun main() {
         else -> println("none of the above")
     }
 
+    when {
+        1 in validNumbers -> println("1 is available in validNumbers")
+        2 in validNumbers -> println("2 is available in validNumbers")
+    }
+
     println(hasPrefix(s))
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    // Ranges
+
+    val v4 = 10
+    val v5 = 9
+    if (v4 in 1..v5) {  // in - is used to checked the left side value is under in right side value range
+        println("fits in range")
+    }
+    else {
+        println("not fits in range")
+    }
+
+    val list = listOf(1,2,3,4,5,6)
+    if (list.size !in list.indices) {
+        println("list size is out of valid list indices range, too")
+    }
 
 }
 
