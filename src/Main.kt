@@ -169,6 +169,65 @@ fun main() {
     if (list.size !in list.indices) {
         println("list size is out of valid list indices range, too")
     }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    //Data classes
+    /*
+    * Data classes in Kotlin are primarily used to hold data. For each data class, the compiler automatically generates
+    * additional member functions that allow you to print an instance to readable output, compare instances, copy instances,
+    * and more. Data classes are marked with data
+    *
+    * The primary constructor must have at least one parameter.
+    * All primary constructor parameters must be marked as val or var.
+    * Data classes can't be abstract, open, sealed, or inner.
+    * */
+    //.equals()
+    /*
+    * equals() are used to check two variable's values. if those are same it will return true if not it will return false.
+    * */
+
+    val user1 = User("syedfaizal", 24)
+    val user2 = User("faizalsyed", 25)
+    val user3 = User("syedfaizal", 24)
+    if(user1.equals(user2)) println("Both instance's value is same or equal") else println("Both instance's value is not same or equal")
+    val i = "faizal"
+    val d = "faizal"
+    if(i.equals(d)) println("both vales are same") else println("Both value is not same or equal")
+    if(user1.equals(user3)) println("Both instance's value is same or equal")
+
+    //hashCode()
+    /*
+    *
+    * */
+    println(user1.hashCode().equals(user3.hashCode())) //two instance have same values so both hashCode is same.
+
+    //.copy()
+    /*
+    * actually .copy() functions are used to take a copy of the variables or instance.
+    * without using .copy() function actually data is shared. So by change a value in one instance it's automatically reflect another instance.
+    * with using .copy() function actually data is copied. so by change a value in one instance it's not reflect another instance.
+    * */
+
+    // stage -1 (without .copy() function)
+
+    val user4 = User("faizal",24)
+    val user5 = user4
+    user5.name= "syedfaizal"
+    println(user4.name+" "+" "+user5.name) // both values are same. but actually user5's name value only changed.
+
+    //stage -2 (with .copy() function)
+
+    val user6 = User("mohamed",26)
+    val user7 = user6.copy()
+    user7.name = "ashik"
+    println(user6.name+" "+user7.name) // both values are not same. because we just copy the instance's value not shared the instance.
+
+    //.toString()
+
+    println(user6.toString())   //User(name=mohamed, age=26)
+
+
+
 
 }
 
@@ -178,6 +237,12 @@ fun hasPrefix(x: Any) = when(x) {
     else -> false
 }
 
-
+data class User(var name: String, val age: Int){
+    /*
+    * The primary constructor must have at least one parameter.
+    * All primary constructor parameters must be marked as val or var.
+    * Data classes can't be abstract, open, sealed, or inner.
+    * */
+}
 
 
