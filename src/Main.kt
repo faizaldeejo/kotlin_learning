@@ -237,12 +237,30 @@ fun hasPrefix(x: Any) = when(x) {
     else -> false
 }
 
-data class User(var name: String, val age: Int){
+open class NewUser{
+    fun newUserFunction(){
+        println("p")
+    }
+}
+
+
+
+data class User(var name: String, val age: Int) : NewUser() {
     /*
     * The primary constructor must have at least one parameter.
     * All primary constructor parameters must be marked as val or var.
     * Data classes can't be abstract, open, sealed, or inner.
     * */
+    var booleanValue : Boolean = true
+    init {
+        newUserFunction()
+        userFuction()
+    }
+
+    fun userFuction(){
+        println("y")
+    }
+
 }
 
 
