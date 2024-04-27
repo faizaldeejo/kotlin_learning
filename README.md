@@ -1,12 +1,12 @@
 Concepts (false){
     Types (false){
         Basic types (false){
-            Overview (false)
+            Overview (true)
             Numbers (false)
             Unsigned integer types (false)
             Booleans (false)
             Character (false)
-            Strings (false)
+            Strings (almost)
             Arrays (false)
         }
         Type checks and casts (false)

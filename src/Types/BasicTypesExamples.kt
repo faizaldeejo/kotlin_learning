@@ -1,16 +1,13 @@
 package Types
 
-import samplePackage.Bit
-import kotlin.reflect.typeOf
-
 fun main(){
-    val basicTypes = BasicTypes()
+    val basicTypes = BasicTypesExamples()
     basicTypes.numbers()
 
     println(System.identityHashCode(basicTypes))
 }
 
-class BasicTypes {
+class BasicTypesExamples {
     val t = "faizal"
 
     fun numbers(){
