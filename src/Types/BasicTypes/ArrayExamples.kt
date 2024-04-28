@@ -4,6 +4,7 @@ fun main(){
     var arrayExamples = ArrayExamples()
     arrayExamples.arrayBasics()
     arrayExamples.creatingVariousArray()
+    arrayExamples.nestedArray()
 
 }
 
@@ -22,9 +23,6 @@ class ArrayExamples {
         // 014916
     }
 
-    init {
-
-    }
 
     fun arrayBasics(){
         //An array is a data structure that holds a fixed number of values of the same type or its subtypes.
@@ -65,6 +63,41 @@ class ArrayExamples {
        // var mtArray = emptyArray<String>()
         var mtArray: Array<String> = emptyArray()
     }
+    fun nestedArray(){
+        // Creates a two-dimensional array
+        val twoDArray = Array(2) {Array<Int>(2) {0} }
+        twoDArray.forEach {
+            print("\n")
+            it.forEach {
+                print(it)
+            }
+        }
+
+        print("\n")
+        // Create a three-dimensional array
+        val threeDArray = Array(3) { Array(3) { Array<Int>(3) { 0 } } }
+        println(threeDArray.contentDeepToString()) // contentDeepToString() used to convert multidimensional to string
+
+    }
+
+    fun accessAndModifyElements(){
+        //Arrays are always mutable. To access and modify elements in an array, use the indexed access operator[]
+
+        val simpleArray = arrayOf(1, 2, 3)
+        val twoDArray = Array(2) { Array<Int>(2) { 0 } }
+
+        // Accesses the element and modifies it
+        simpleArray[0] = 10
+        twoDArray[0][0] = 2
+
+        // Prints the modified element
+        println(simpleArray[0].toString()) // 10
+        println(twoDArray[0][0].toString()) // 2
+    }
+
+
+
+
 
 
 
