@@ -5,6 +5,8 @@ fun main(){
     arrayExamples.arrayBasics()
     arrayExamples.creatingVariousArray()
     arrayExamples.nestedArray()
+    arrayExamples.compareArrays()
+    arrayExamples.arrayTransform()
 
 }
 
@@ -94,6 +96,44 @@ class ArrayExamples {
         println(simpleArray[0].toString()) // 10
         println(twoDArray[0][0].toString()) // 2
     }
+
+    fun varargConcept (){
+
+    }
+
+    fun compareArrays(){
+        // To compare two arrays use .contentEquals(), .contentDeepEquals()
+        val arrayOne = arrayOf(1,2,3,4)
+        val arrayTwo = arrayOf(1,2,4)
+
+        // using .equals function to compare two arrays
+        println(arrayOne.equals(arrayOne))
+        //using .contentEquals() function to compare tow arrays
+        println(arrayOne.contentEquals(arrayTwo))
+
+        val twoDArray1 = Array(2) { Array<Int>(2) { 0 } }
+        val twoDArray2 = Array(2) { Array<Int>(2) { 0 } }
+        //using .contentDeepEquals() to compare multidimenional array
+        println(twoDArray1.contentDeepEquals(twoDArray2)) // true
+        println(twoDArray1.equals(twoDArray2)) // .equals() function return false. it's not working
+
+        val t = "faizal"
+        println(t.contentEquals("faizal"))  // contentEquals also work for string
+    }
+
+    fun arrayTransform(){
+        /*
+        * The below contents only contains some of them . The below url have all
+        * https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/
+        * */
+
+        val array= arrayOf(3,3,3)
+        println(array.sum()) // it's return the sum of all elements in array
+
+        
+
+    }
+
 
 
 
