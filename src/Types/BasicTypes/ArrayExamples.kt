@@ -7,6 +7,7 @@ fun main(){
     arrayExamples.nestedArray()
     arrayExamples.compareArrays()
     arrayExamples.arrayTransform()
+    arrayExamples.primitiveTypeArray()
 
 }
 
@@ -127,16 +128,47 @@ class ArrayExamples {
         * https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/
         * */
 
-        val array= arrayOf(3,3,3)
+        val array= arrayOf(3,2,1)
         println(array.sum()) // it's return the sum of all elements in array
 
-        
+        array.shuffle() // to randomly shuffle the elements in an array, use the .shuffle()
+        println(array.joinToString())
+
+
+        // convert arrays to collections
+
+        // Convert to list or set
+
+        val sampleArray= arrayOf("faizal", "basha", "syed", "ashik", "ameer")
+
+        println(sampleArray.toList()) // convert the array to List
+        println(sampleArray.toSet()) // convert the array to set
+
+        // We can convert the array into map
+           // while the array should be pairArray
+
+        val pairArray= arrayOf(1 to "faizal", 2 to "ashik", 4 to "ashik", 3 to "faizal")
+        // Converts to a Map
+        // Note: keys must be unique, value can duplicate.
+        println(pairArray.toMap())
 
     }
 
+    fun primitiveTypeArray(){
+        val booleanArray = BooleanArray(3)
+        println(booleanArray.joinToString())
 
+        val byteArray= arrayOf<Byte>(4,5,127)
+        println(byteArray.joinToString())
 
+        val charArray= arrayOf<Char>('o','9','8')
+        println(charArray.joinToString())
 
+        val stringArray= arrayOf<String>("faizal","syed")
+        println(stringArray.joinToString())
+
+        // you can also create array with long, short, float, double primitive types
+    }
 
 
 

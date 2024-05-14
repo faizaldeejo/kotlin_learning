@@ -6,8 +6,8 @@ Concepts (false){
             Unsigned integer types (false)
             Booleans (false)
             Character (false)
-            Strings (almost)
-            Arrays (false)
+            Strings (almost) -- balance = why String is mutable ?
+            Arrays (false) -- 
         }
         Type checks and casts (false)
     }
