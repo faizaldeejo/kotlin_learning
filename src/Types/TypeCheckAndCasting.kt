@@ -45,8 +45,6 @@ class TypeCheckAndCasting {
 
         val intValue= 4
         val stringValues2= intValue as String // throws Exception
-        val StringValues3= intValue as? String   // No Exception  Ans: null
+        val stringValues3= intValue as? String   // No Exception  Ans: null
     }
-
-
 }

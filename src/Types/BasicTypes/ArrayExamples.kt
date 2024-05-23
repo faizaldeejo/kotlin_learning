@@ -64,7 +64,8 @@ class ArrayExamples {
 
         // emptyArray() //You can specify the type of the empty array on the left-hand or right-hand side
        // var mtArray = emptyArray<String>()
-        var mtArray: Array<String> = emptyArray()
+        var mtArray: Array<String> = emptyArray()   // What is the differance b/w this and below ?
+        var mtArray1: Array<String> = arrayOf()
     }
     fun nestedArray(){
         // Creates a two-dimensional array

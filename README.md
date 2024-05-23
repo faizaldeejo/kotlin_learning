@@ -1,5 +1,5 @@
 Concepts (false){
-    Types (false){
+    Types (almost){
         Basic types (false){
             Overview (true)
             Numbers (false)
@@ -7,9 +7,9 @@ Concepts (false){
             Booleans (false)
             Character (false)
             Strings (almost) -- balance = why String is mutable ?
-            Arrays (false) -- 
+            Arrays (almost) -- balance = varargConcept 
         }
-        Type checks and casts (false)
+        Type checks and casts (true)
     }
     Control flow (false){
         Conditions and loops (false)
