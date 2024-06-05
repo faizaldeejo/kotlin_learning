@@ -12,9 +12,9 @@ Concepts (false){
         Type checks and casts (true)
     }
     Control flow (false){
-        Conditions and loops (false)
-        Returns and jumps (false)
-        Exceptons (false)
+        Conditions and loops (true)
+        Returns and jumps (ture)
+        Exceptons (almost) -- 
     }
     Packages and imports (true)
     Classes and objects (false){
