@@ -18,7 +18,7 @@ Concepts (false){
     }
     Packages and imports (true)
     Classes and objects (false){
-        Classes (false)
+        Classes (almost) -- balance= abstract classes
         Inheritance (false)
         Properties (false)
         Interfaces (false)
