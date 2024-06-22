@@ -74,6 +74,29 @@ class Class5(val name: String){  // here the name variable is class property and
         println(name)  // we can use it. bcaz name is class property.
     }
 }
+
+                                            /* initializer block*/
+/**
+ * A class may have one or more init blocks , but each init blocks only depends on class and primary constructor
+ */
+
+class initClass(val name: String, age: Int){
+    init {
+        println(name+age)
+    }
+    constructor(name1: String):this(name1,5)
+    init {
+        // actually class body execute one by one line. so std variable declared after this init block so we can't use it.
+       // println(name1+age)
+        //println(std)
+    }
+
+    val std = "preKG"
+
+
+}
+
+
                                             /* secondary constructor*/
 
 /**

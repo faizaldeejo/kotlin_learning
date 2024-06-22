@@ -14,14 +14,14 @@ Concepts (false){
     Control flow (false){
         Conditions and loops (true)
         Returns and jumps (ture)
-        Exceptons (almost) -- 
+        Exceptions (almost) -- 
     }
     Packages and imports (true)
     Classes and objects (false){
         Classes (almost) -- balance= abstract classes
-        Inheritance (false)
-        Properties (false)
-        Interfaces (false)
+        Inheritance (almost) -- balance= overriding properties, derived class initialization order, calling the superclass implementation, overriding rules, 
+        Properties (almost) -- balance= Backing properties, compile-time constants, late- initialized properties and variables, delegated properties
+        Interfaces (almost)  -- balance= Resolving overriding conflicts, a class implements two interface both interface have same property now how to handle it. 
         Functional (SAM) interfaces (false)
         Visibility modifiers (false)
         Extensions (false)
