@@ -22,7 +22,7 @@ Concepts (false){
         Inheritance (almost) -- balance= overriding properties, derived class initialization order, calling the superclass implementation, overriding rules, 
         Properties (almost) -- balance= Backing properties, compile-time constants, late- initialized properties and variables, delegated properties
         Interfaces (almost)  -- balance= Resolving overriding conflicts, a class implements two interface both interface have same property now how to handle it. 
-        Functional (SAM) interfaces (false)
+        Functional (SAM) interfaces (almost) --balance= Migration from an interface with constructor function to a functional interface, different b/w functional interface and typealias
         Visibility modifiers (false)
         Extensions (false)
         Data classes (false)
