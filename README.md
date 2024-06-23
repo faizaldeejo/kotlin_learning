@@ -24,7 +24,7 @@ Concepts (false){
         Interfaces (almost)  -- balance= Resolving overriding conflicts, a class implements two interface both interface have same property now how to handle it. 
         Functional (SAM) interfaces (almost) --balance= Migration from an interface with constructor function to a functional interface, different b/w functional interface and typealias
         Visibility modifiers (false)
-        Extensions (false)
+        Extensions (almost) -- balance= Extension as member. visibility of the Extension function and property.
         Data classes (false)
         Sealed classes and interfaces (false)
         Generics: in,out,where (false)

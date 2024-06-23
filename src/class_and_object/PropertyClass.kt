@@ -47,10 +47,4 @@ class PropertyClass {
         value2 = "ashik"
     }
 
-
-    
-
-
-
-
 }
