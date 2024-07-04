@@ -25,7 +25,7 @@ Concepts (false){
         Functional (SAM) interfaces (almost) --balance= Migration from an interface with constructor function to a functional interface, different b/w functional interface and typealias
         Visibility modifiers (false)
         Extensions (almost) -- balance= Extension as member. visibility of the Extension function and property.
-        Data classes (false)
+        Data classes (almost)  -- balance= componentN()
         Sealed classes and interfaces (false)
         Generics: in,out,where (false)
         Nested and inner classes (false)
