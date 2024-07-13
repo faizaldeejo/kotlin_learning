@@ -29,7 +29,7 @@ Concepts (false){
         Sealed classes and interfaces (false)
         Generics: in,out,where (false)
         Nested and inner classes (almost) -- balance= how to create a instance to inner class, Anonymous inner classes,
-        Enum classes (false)
+        Enum classes (almost) -- balance = working with enum constants, Anonymous class in enum.
         Inline value class (false)
         Object expressions and declarations (false)
         Delegation (false)
