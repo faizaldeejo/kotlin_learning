@@ -96,6 +96,33 @@ class initClass(val name: String, age: Int){
 
 }
 
+/*fun main() {
+    Class("syed faizal")
+}*/
+
+/**
+ * When the primary constructor and class property have same name, while the init will take primary constructor's variable.
+ */
+
+class InitClass(name: String){
+    val name: String= "faizal"
+    init{
+        if(name.equals("faizal"))
+            println("true")
+        else
+            println("false")
+
+        getNameTrue()
+    }
+
+    fun getNameTrue(){
+        if(name.equals("faizal"))
+            println("true")
+        else
+            println("false")
+    }
+}
+
 
                                             /* secondary constructor*/
 
