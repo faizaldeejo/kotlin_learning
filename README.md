@@ -27,7 +27,7 @@ Concepts (false){
         Extensions (almost) -- balance= Extension as member. visibility of the Extension function and property.
         Data classes (almost)  -- balance= componentN()
         Sealed classes and interfaces (false)
-        Generics: in,out,where (false)
+        Generics: in,out,where (almost) -- balance = Variance, Type erasure(Generic type checks and casts, Unchecked casts, Underscore operator for type arguments )
         Nested and inner classes (almost) -- balance= how to create a instance to inner class, Anonymous inner classes,
         Enum classes (almost) -- balance = working with enum constants, Anonymous class in enum.
         Inline value class (false)

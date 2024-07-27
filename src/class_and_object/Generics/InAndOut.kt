@@ -10,8 +10,6 @@ fun main(){
      * otherwise its only accept its own type reference.
      */
 
-
-
     var fixedGenericType: FixedGenericType<FastFood> =
         FixedGenericType<FastFood>() //✅ FastFood is needed. so its accept it.
         //FixedGenericType<Food>() //❌ Food is superclass of FastFood, but its not accept in generic concept
