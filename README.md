@@ -31,7 +31,7 @@ Concepts (false){
         Nested and inner classes (almost) -- balance= how to create a instance to inner class, Anonymous inner classes,
         Enum classes (almost) -- balance = working with enum constants, Anonymous class in enum.
         Inline value class (false)
-        Object expressions and declarations (false)
+        Object expressions and declarations (true) 
         Delegation (false)
         Delegated properties (false)
         Type aliases (false)
